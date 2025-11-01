@@ -8,6 +8,6 @@ vault_k8s_auth_path: gke-dev
 services:
   - name: ct-logic-job-3
     namespace: default
-    action: add
+    action: delete
     secrets:
       - QEWR
