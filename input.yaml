@@ -1,4 +1,4 @@
-vault_address: https://vault-cloud.chotot.com
+vault_address: https://vault-cloud.chotot.org
 vault_token_env: CHOTOT_VAULT_GCP_DEV_TOKEN
 
 k8s_cluster_env: CHOTOT_GKE_DEV
@@ -6,14 +6,8 @@ vault_secret_engine: gke-dev
 vault_k8s_auth_path: gke-dev
 
 services:
-  - name: ct-logic-job
+  - name: ct-logic-job-3
     namespace: default
-    action: delete
-    secrets:
-      - QEWR
-
-  - name: ct-logic-job
-    namespace: default
-    action: create
+    action: add
     secrets:
       - QEWR
