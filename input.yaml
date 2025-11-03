@@ -6,9 +6,8 @@ vault_secret_engine: gke-dev
 vault_k8s_auth_path: gke-dev
 
 services:
-  - name: ct-core-test-2
+  - name: ct-logic-job
     namespace: default
     action: add
     secrets:
-      - GIT_TOKEN
-      - NPM_TOKEN
+      - IPO
