@@ -10,4 +10,4 @@ services:
     namespace: default
     action: add
     secrets:
-      - DFA
+      - WEQ
